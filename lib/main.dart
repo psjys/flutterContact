@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold( // 상중하로 나눠주는 Scaffold 위젯
         appBar: AppBar(title : Text('Hi')),
         body : Align( // center 말고 다른거 하고 싶으면 바꾸면됨~~!
-          alignment: Alignment.bottomCenter,
+          alignment: Alignment.topCenter,
           child: Container(
-            width: double.infinity, height: 50,
+            width: double.infinity, height: 50, color: Colors.blue,
             // margin 만들기
             // margin: EdgeInsets.all(20),
             // margin: EdgeInsets.fromLTRB(0, 0, 30, 30), // 각각 설정 가능
@@ -31,8 +31,7 @@ class MyApp extends StatelessWidget {
             ),
         ),
         )
-        ),
-    );
+        );
   }
 }
 
